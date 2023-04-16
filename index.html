@@ -1,0 +1,29 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/47c0aaf49b.js" crossorigin="anonymous"></script>
+    <title>Animated Action Menu</title>
+</head>
+  <body>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <div class="menu">
+            <ul>
+                <li style="--i:0.1s"><a href="#"><i class="fa-solid fa-camera"></i></a></li>
+                <li style="--i:0.2s"><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+                <li style="--i:0.3s"><a href="#"><i class="fa-solid fa-trash-can"></i></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
